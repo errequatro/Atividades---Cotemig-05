@@ -53,6 +53,12 @@ button {
 
     & .header {
         grid-column: 1/5;
+
+        text-align: center;
+
+        & h1{
+            margin-top: 5vh;
+        }
     }
 
     & .space1 {
@@ -165,7 +171,7 @@ button {
     }
 }
 
-#inv {
+/* #inv {
     z-index: -5;
     opacity: 0;
-}
+} */
