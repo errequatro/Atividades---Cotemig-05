@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Mask</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="header"></div>
+        <div class="space1"></div>
+        <div class="space2"></div>
+
+        <div class="form_name">
+            <h2>Nome:</h2>
+        </div>
+        <div class="form_name_input">
+            <input type="text">
+        </div>
+
+        <div class="form_addres">
+            <h2>Endereço:</h2>
+        </div>
+        <div class="form_addres_input">
+            <input type="text">
+        </div>
+
+        <div class="form_cep">
+            <h2>CEP:</h2>
+        </div>
+        <div class="form_cep_input">
+            <input type="text" id="cep" maxlength="10">
+        </div>
+
+        <div class="form_cpf">
+            <h2>CPF:</h2>
+        </div>
+        <div class="form_cpf_input">
+            <input type="text" maxlength="14">
+        </div>
+
+        <div class="form_telefone">
+            <h2>Telefone:</h2>
+        </div>
+        <div class="form_telefone_input">
+            <input type="tel" id="telefone" maxlength="14" oninput=mascara_telefone()>
+        </div>
+
+        <div class="form_cnpj">
+            <h2>CNPJ:</h2>
+        </div>
+        <div class="form_cnpj_input">
+            <input type="text" maxlength="18">
+        </div>
+
+        <div class="form_code">
+            <h2>Código:</h2>
+        </div>
+        <div class="form_code_input">
+            <input type="text" maxlength="20">
+        </div>
+
+        <div class="enviar">
+            <button>Enviar</button>
+        </div>
+        <div class="continuar" id="inv">
+            <button>Continuar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
